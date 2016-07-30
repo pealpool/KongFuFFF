@@ -25,6 +25,35 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ProgressBar1_fRight = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar1_fLeft = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar1_aRight = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar1_aLeft = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar1_body = New System.Windows.Forms.ProgressBar()
+        Me.ProgressBar1_Head = New System.Windows.Forms.ProgressBar()
+        Me.TextBox1_foot_con = New System.Windows.Forms.TextBox()
+        Me.TextBox1_arm_con = New System.Windows.Forms.TextBox()
+        Me.TextBox1_yao_con = New System.Windows.Forms.TextBox()
+        Me.TextBox1_back_con = New System.Windows.Forms.TextBox()
+        Me.TextBox1_Xiong_con = New System.Windows.Forms.TextBox()
+        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.TextBox1_Head_con = New System.Windows.Forms.TextBox()
+        Me.TextBox1_Falldown = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox1_foot_hp = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox1_arm_hp = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox1_body_hp = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBox1_Head_hp = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox1_WenDi = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox1_Int = New System.Windows.Forms.TextBox()
@@ -34,35 +63,6 @@ Partial Class Form1
         Me.TextBox1_Pow = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1_body_hp = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox1_Head_hp = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox1_foot_hp = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox1_arm_hp = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox1_Falldown = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1_foot_con = New System.Windows.Forms.TextBox()
-        Me.TextBox1_arm_con = New System.Windows.Forms.TextBox()
-        Me.TextBox1_yao_con = New System.Windows.Forms.TextBox()
-        Me.TextBox1_back_con = New System.Windows.Forms.TextBox()
-        Me.TextBox1_Xiong_con = New System.Windows.Forms.TextBox()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
-        Me.TextBox1_Head_con = New System.Windows.Forms.TextBox()
-        Me.ProgressBar1_Head = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar1_body = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar1_aLeft = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar1_aRight = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar1_fRight = New System.Windows.Forms.ProgressBar()
-        Me.ProgressBar1_fLeft = New System.Windows.Forms.ProgressBar()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.ProgressBar2_fRight = New System.Windows.Forms.ProgressBar()
         Me.ProgressBar2_fLeft = New System.Windows.Forms.ProgressBar()
@@ -170,6 +170,242 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "per1"
         '
+        'ProgressBar1_fRight
+        '
+        Me.ProgressBar1_fRight.Location = New System.Drawing.Point(205, 195)
+        Me.ProgressBar1_fRight.Name = "ProgressBar1_fRight"
+        Me.ProgressBar1_fRight.Size = New System.Drawing.Size(115, 10)
+        Me.ProgressBar1_fRight.TabIndex = 44
+        '
+        'ProgressBar1_fLeft
+        '
+        Me.ProgressBar1_fLeft.Location = New System.Drawing.Point(205, 184)
+        Me.ProgressBar1_fLeft.Name = "ProgressBar1_fLeft"
+        Me.ProgressBar1_fLeft.Size = New System.Drawing.Size(115, 10)
+        Me.ProgressBar1_fLeft.TabIndex = 43
+        '
+        'ProgressBar1_aRight
+        '
+        Me.ProgressBar1_aRight.Location = New System.Drawing.Point(205, 168)
+        Me.ProgressBar1_aRight.Name = "ProgressBar1_aRight"
+        Me.ProgressBar1_aRight.Size = New System.Drawing.Size(115, 10)
+        Me.ProgressBar1_aRight.TabIndex = 42
+        '
+        'ProgressBar1_aLeft
+        '
+        Me.ProgressBar1_aLeft.Location = New System.Drawing.Point(205, 157)
+        Me.ProgressBar1_aLeft.Name = "ProgressBar1_aLeft"
+        Me.ProgressBar1_aLeft.Size = New System.Drawing.Size(115, 10)
+        Me.ProgressBar1_aLeft.TabIndex = 41
+        '
+        'ProgressBar1_body
+        '
+        Me.ProgressBar1_body.Location = New System.Drawing.Point(205, 49)
+        Me.ProgressBar1_body.Name = "ProgressBar1_body"
+        Me.ProgressBar1_body.Size = New System.Drawing.Size(200, 21)
+        Me.ProgressBar1_body.TabIndex = 40
+        '
+        'ProgressBar1_Head
+        '
+        Me.ProgressBar1_Head.Location = New System.Drawing.Point(205, 22)
+        Me.ProgressBar1_Head.Name = "ProgressBar1_Head"
+        Me.ProgressBar1_Head.Size = New System.Drawing.Size(115, 21)
+        Me.ProgressBar1_Head.TabIndex = 39
+        '
+        'TextBox1_foot_con
+        '
+        Me.TextBox1_foot_con.Location = New System.Drawing.Point(162, 184)
+        Me.TextBox1_foot_con.Name = "TextBox1_foot_con"
+        Me.TextBox1_foot_con.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_foot_con.TabIndex = 38
+        Me.TextBox1_foot_con.Text = "100"
+        '
+        'TextBox1_arm_con
+        '
+        Me.TextBox1_arm_con.Location = New System.Drawing.Point(162, 157)
+        Me.TextBox1_arm_con.Name = "TextBox1_arm_con"
+        Me.TextBox1_arm_con.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_arm_con.TabIndex = 37
+        Me.TextBox1_arm_con.Text = "80"
+        '
+        'TextBox1_yao_con
+        '
+        Me.TextBox1_yao_con.Location = New System.Drawing.Point(162, 130)
+        Me.TextBox1_yao_con.Name = "TextBox1_yao_con"
+        Me.TextBox1_yao_con.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_yao_con.TabIndex = 36
+        Me.TextBox1_yao_con.Text = "3"
+        '
+        'TextBox1_back_con
+        '
+        Me.TextBox1_back_con.Location = New System.Drawing.Point(162, 103)
+        Me.TextBox1_back_con.Name = "TextBox1_back_con"
+        Me.TextBox1_back_con.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_back_con.TabIndex = 35
+        Me.TextBox1_back_con.Text = "15"
+        '
+        'TextBox1_Xiong_con
+        '
+        Me.TextBox1_Xiong_con.Location = New System.Drawing.Point(162, 76)
+        Me.TextBox1_Xiong_con.Name = "TextBox1_Xiong_con"
+        Me.TextBox1_Xiong_con.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_Xiong_con.TabIndex = 34
+        Me.TextBox1_Xiong_con.Text = "15"
+        '
+        'TextBox22
+        '
+        Me.TextBox22.Location = New System.Drawing.Point(162, 49)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.ReadOnly = True
+        Me.TextBox22.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox22.TabIndex = 33
+        '
+        'TextBox1_Head_con
+        '
+        Me.TextBox1_Head_con.Location = New System.Drawing.Point(162, 22)
+        Me.TextBox1_Head_con.Name = "TextBox1_Head_con"
+        Me.TextBox1_Head_con.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_Head_con.TabIndex = 32
+        Me.TextBox1_Head_con.Text = "5"
+        '
+        'TextBox1_Falldown
+        '
+        Me.TextBox1_Falldown.Location = New System.Drawing.Point(41, 130)
+        Me.TextBox1_Falldown.Name = "TextBox1_Falldown"
+        Me.TextBox1_Falldown.ReadOnly = True
+        Me.TextBox1_Falldown.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_Falldown.TabIndex = 29
+        Me.TextBox1_Falldown.TabStop = False
+        Me.TextBox1_Falldown.Text = "稳定"
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(11, 133)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(38, 18)
+        Me.Label1.TabIndex = 28
+        Me.Label1.Text = "状态"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox1_foot_hp
+        '
+        Me.TextBox1_foot_hp.Location = New System.Drawing.Point(119, 184)
+        Me.TextBox1_foot_hp.Name = "TextBox1_foot_hp"
+        Me.TextBox1_foot_hp.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_foot_hp.TabIndex = 25
+        Me.TextBox1_foot_hp.Text = "160"
+        '
+        'Label12
+        '
+        Me.Label12.Location = New System.Drawing.Point(89, 187)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(38, 18)
+        Me.Label12.TabIndex = 24
+        Me.Label12.Text = "脚"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox1_arm_hp
+        '
+        Me.TextBox1_arm_hp.Location = New System.Drawing.Point(119, 157)
+        Me.TextBox1_arm_hp.Name = "TextBox1_arm_hp"
+        Me.TextBox1_arm_hp.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_arm_hp.TabIndex = 23
+        Me.TextBox1_arm_hp.Text = "80"
+        '
+        'Label13
+        '
+        Me.Label13.Location = New System.Drawing.Point(89, 160)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(38, 18)
+        Me.Label13.TabIndex = 22
+        Me.Label13.Text = "手"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(119, 130)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.ReadOnly = True
+        Me.TextBox12.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox12.TabIndex = 21
+        '
+        'Label14
+        '
+        Me.Label14.Location = New System.Drawing.Point(89, 133)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(38, 18)
+        Me.Label14.TabIndex = 20
+        Me.Label14.Text = "腰"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(119, 103)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1.TabIndex = 19
+        '
+        'Label7
+        '
+        Me.Label7.Location = New System.Drawing.Point(89, 106)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(38, 18)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "后背"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(119, 76)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
+        Me.TextBox6.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox6.TabIndex = 17
+        '
+        'Label8
+        '
+        Me.Label8.Location = New System.Drawing.Point(89, 79)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(38, 18)
+        Me.Label8.TabIndex = 16
+        Me.Label8.Text = "胸"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox1_body_hp
+        '
+        Me.TextBox1_body_hp.Location = New System.Drawing.Point(119, 49)
+        Me.TextBox1_body_hp.Name = "TextBox1_body_hp"
+        Me.TextBox1_body_hp.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_body_hp.TabIndex = 15
+        Me.TextBox1_body_hp.Text = "200"
+        '
+        'Label9
+        '
+        Me.Label9.Location = New System.Drawing.Point(89, 52)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(38, 18)
+        Me.Label9.TabIndex = 14
+        Me.Label9.Text = "身体"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBox1_Head_hp
+        '
+        Me.TextBox1_Head_hp.Location = New System.Drawing.Point(119, 22)
+        Me.TextBox1_Head_hp.Name = "TextBox1_Head_hp"
+        Me.TextBox1_Head_hp.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_Head_hp.TabIndex = 13
+        Me.TextBox1_Head_hp.Text = "20"
+        '
+        'Label10
+        '
+        Me.Label10.Location = New System.Drawing.Point(89, 25)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(38, 18)
+        Me.Label10.TabIndex = 12
+        Me.Label10.Text = "头"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'TextBox1_WenDi
         '
         Me.TextBox1_WenDi.Location = New System.Drawing.Point(41, 103)
@@ -246,242 +482,6 @@ Partial Class Form1
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Set"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(119, 103)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1.TabIndex = 19
-        '
-        'Label7
-        '
-        Me.Label7.Location = New System.Drawing.Point(89, 106)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(38, 18)
-        Me.Label7.TabIndex = 18
-        Me.Label7.Text = "后背"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(119, 76)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox6.TabIndex = 17
-        '
-        'Label8
-        '
-        Me.Label8.Location = New System.Drawing.Point(89, 79)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(38, 18)
-        Me.Label8.TabIndex = 16
-        Me.Label8.Text = "胸"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TextBox1_body_hp
-        '
-        Me.TextBox1_body_hp.Location = New System.Drawing.Point(119, 49)
-        Me.TextBox1_body_hp.Name = "TextBox1_body_hp"
-        Me.TextBox1_body_hp.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_body_hp.TabIndex = 15
-        Me.TextBox1_body_hp.Text = "200"
-        '
-        'Label9
-        '
-        Me.Label9.Location = New System.Drawing.Point(89, 52)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(38, 18)
-        Me.Label9.TabIndex = 14
-        Me.Label9.Text = "身体"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TextBox1_Head_hp
-        '
-        Me.TextBox1_Head_hp.Location = New System.Drawing.Point(119, 22)
-        Me.TextBox1_Head_hp.Name = "TextBox1_Head_hp"
-        Me.TextBox1_Head_hp.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_Head_hp.TabIndex = 13
-        Me.TextBox1_Head_hp.Text = "20"
-        '
-        'Label10
-        '
-        Me.Label10.Location = New System.Drawing.Point(89, 25)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(38, 18)
-        Me.Label10.TabIndex = 12
-        Me.Label10.Text = "头"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TextBox1_foot_hp
-        '
-        Me.TextBox1_foot_hp.Location = New System.Drawing.Point(119, 184)
-        Me.TextBox1_foot_hp.Name = "TextBox1_foot_hp"
-        Me.TextBox1_foot_hp.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_foot_hp.TabIndex = 25
-        Me.TextBox1_foot_hp.Text = "160"
-        '
-        'Label12
-        '
-        Me.Label12.Location = New System.Drawing.Point(89, 187)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(38, 18)
-        Me.Label12.TabIndex = 24
-        Me.Label12.Text = "脚"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TextBox1_arm_hp
-        '
-        Me.TextBox1_arm_hp.Location = New System.Drawing.Point(119, 157)
-        Me.TextBox1_arm_hp.Name = "TextBox1_arm_hp"
-        Me.TextBox1_arm_hp.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_arm_hp.TabIndex = 23
-        Me.TextBox1_arm_hp.Text = "80"
-        '
-        'Label13
-        '
-        Me.Label13.Location = New System.Drawing.Point(89, 160)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(38, 18)
-        Me.Label13.TabIndex = 22
-        Me.Label13.Text = "手"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(119, 130)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox12.TabIndex = 21
-        '
-        'Label14
-        '
-        Me.Label14.Location = New System.Drawing.Point(89, 133)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(38, 18)
-        Me.Label14.TabIndex = 20
-        Me.Label14.Text = "腰"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TextBox1_Falldown
-        '
-        Me.TextBox1_Falldown.Location = New System.Drawing.Point(41, 130)
-        Me.TextBox1_Falldown.Name = "TextBox1_Falldown"
-        Me.TextBox1_Falldown.ReadOnly = True
-        Me.TextBox1_Falldown.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_Falldown.TabIndex = 29
-        Me.TextBox1_Falldown.TabStop = False
-        Me.TextBox1_Falldown.Text = "稳定"
-        '
-        'Label1
-        '
-        Me.Label1.Location = New System.Drawing.Point(11, 133)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 18)
-        Me.Label1.TabIndex = 28
-        Me.Label1.Text = "状态"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'TextBox1_foot_con
-        '
-        Me.TextBox1_foot_con.Location = New System.Drawing.Point(162, 184)
-        Me.TextBox1_foot_con.Name = "TextBox1_foot_con"
-        Me.TextBox1_foot_con.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_foot_con.TabIndex = 38
-        Me.TextBox1_foot_con.Text = "100"
-        '
-        'TextBox1_arm_con
-        '
-        Me.TextBox1_arm_con.Location = New System.Drawing.Point(162, 157)
-        Me.TextBox1_arm_con.Name = "TextBox1_arm_con"
-        Me.TextBox1_arm_con.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_arm_con.TabIndex = 37
-        Me.TextBox1_arm_con.Text = "80"
-        '
-        'TextBox1_yao_con
-        '
-        Me.TextBox1_yao_con.Location = New System.Drawing.Point(162, 130)
-        Me.TextBox1_yao_con.Name = "TextBox1_yao_con"
-        Me.TextBox1_yao_con.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_yao_con.TabIndex = 36
-        Me.TextBox1_yao_con.Text = "3"
-        '
-        'TextBox1_back_con
-        '
-        Me.TextBox1_back_con.Location = New System.Drawing.Point(162, 103)
-        Me.TextBox1_back_con.Name = "TextBox1_back_con"
-        Me.TextBox1_back_con.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_back_con.TabIndex = 35
-        Me.TextBox1_back_con.Text = "15"
-        '
-        'TextBox1_Xiong_con
-        '
-        Me.TextBox1_Xiong_con.Location = New System.Drawing.Point(162, 76)
-        Me.TextBox1_Xiong_con.Name = "TextBox1_Xiong_con"
-        Me.TextBox1_Xiong_con.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_Xiong_con.TabIndex = 34
-        Me.TextBox1_Xiong_con.Text = "15"
-        '
-        'TextBox22
-        '
-        Me.TextBox22.Location = New System.Drawing.Point(162, 49)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.ReadOnly = True
-        Me.TextBox22.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox22.TabIndex = 33
-        '
-        'TextBox1_Head_con
-        '
-        Me.TextBox1_Head_con.Location = New System.Drawing.Point(162, 22)
-        Me.TextBox1_Head_con.Name = "TextBox1_Head_con"
-        Me.TextBox1_Head_con.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_Head_con.TabIndex = 32
-        Me.TextBox1_Head_con.Text = "5"
-        '
-        'ProgressBar1_Head
-        '
-        Me.ProgressBar1_Head.Location = New System.Drawing.Point(205, 22)
-        Me.ProgressBar1_Head.Name = "ProgressBar1_Head"
-        Me.ProgressBar1_Head.Size = New System.Drawing.Size(115, 21)
-        Me.ProgressBar1_Head.TabIndex = 39
-        '
-        'ProgressBar1_body
-        '
-        Me.ProgressBar1_body.Location = New System.Drawing.Point(205, 49)
-        Me.ProgressBar1_body.Name = "ProgressBar1_body"
-        Me.ProgressBar1_body.Size = New System.Drawing.Size(200, 21)
-        Me.ProgressBar1_body.TabIndex = 40
-        '
-        'ProgressBar1_aLeft
-        '
-        Me.ProgressBar1_aLeft.Location = New System.Drawing.Point(205, 157)
-        Me.ProgressBar1_aLeft.Name = "ProgressBar1_aLeft"
-        Me.ProgressBar1_aLeft.Size = New System.Drawing.Size(115, 10)
-        Me.ProgressBar1_aLeft.TabIndex = 41
-        '
-        'ProgressBar1_aRight
-        '
-        Me.ProgressBar1_aRight.Location = New System.Drawing.Point(205, 168)
-        Me.ProgressBar1_aRight.Name = "ProgressBar1_aRight"
-        Me.ProgressBar1_aRight.Size = New System.Drawing.Size(115, 10)
-        Me.ProgressBar1_aRight.TabIndex = 42
-        '
-        'ProgressBar1_fRight
-        '
-        Me.ProgressBar1_fRight.Location = New System.Drawing.Point(205, 195)
-        Me.ProgressBar1_fRight.Name = "ProgressBar1_fRight"
-        Me.ProgressBar1_fRight.Size = New System.Drawing.Size(115, 10)
-        Me.ProgressBar1_fRight.TabIndex = 44
-        '
-        'ProgressBar1_fLeft
-        '
-        Me.ProgressBar1_fLeft.Location = New System.Drawing.Point(205, 184)
-        Me.ProgressBar1_fLeft.Name = "ProgressBar1_fLeft"
-        Me.ProgressBar1_fLeft.Size = New System.Drawing.Size(115, 10)
-        Me.ProgressBar1_fLeft.TabIndex = 43
         '
         'GroupBox2
         '

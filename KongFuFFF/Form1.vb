@@ -83,6 +83,10 @@
 
     End Sub
 
+    Private Function MinZhong(ByVal per_Att As Person, ByVal per_Con As Person)
+        MinZhong = (1.2 - 1.2 / (0.25 * per_Att.Dev + 1)) - (1 - 1 / (0.02 * per_Con.Dev + 1))
+    End Function
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
@@ -96,6 +100,11 @@
             .AppendText(per1zc.miaosuci + " per2 ")
             .AppendText(BuWei1 + Environment.NewLine)
         End With
+        If MinZhong(per1, per2) >= (Val(Rndz(0, 101)) * 0.01) Then
+            RichTextBox1.AppendText("命中" + Environment.NewLine)
+        Else
+            RichTextBox1.AppendText("闪避" + Environment.NewLine)
+        End If
 
 
 
@@ -111,7 +120,11 @@
             .AppendText(per2zc.miaosuci + " per1 ")
             .AppendText(BuWei2 + Environment.NewLine)
         End With
-
+        If MinZhong(per2, per1) >= (Val(Rndz(0, 101)) * 0.01) Then
+            RichTextBox1.AppendText("命中" + Environment.NewLine)
+        Else
+            RichTextBox1.AppendText("闪避" + Environment.NewLine)
+        End If
 
         RichTextBox1.ScrollToCaret() '滚动到光标处
 
