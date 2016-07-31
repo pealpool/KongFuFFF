@@ -38,22 +38,22 @@ Partial Class Form1
         Me.TextBox1_Xiong_con = New System.Windows.Forms.TextBox()
         Me.TextBox22 = New System.Windows.Forms.TextBox()
         Me.TextBox1_Head_con = New System.Windows.Forms.TextBox()
-        Me.TextBox1_Falldown = New System.Windows.Forms.TextBox()
+        Me.TextBox1_WenD = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1_foot_hp = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label1_foot = New System.Windows.Forms.Label()
         Me.TextBox1_arm_hp = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label1_arm = New System.Windows.Forms.Label()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label1_yao = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label1_back = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label1_Xiong = New System.Windows.Forms.Label()
         Me.TextBox1_body_hp = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label1_body = New System.Windows.Forms.Label()
         Me.TextBox1_Head_hp = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label1_head = New System.Windows.Forms.Label()
         Me.TextBox1_WenDi = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox1_Int = New System.Windows.Forms.TextBox()
@@ -77,22 +77,22 @@ Partial Class Form1
         Me.TextBox2_Xiong_con = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox2_Head_con = New System.Windows.Forms.TextBox()
-        Me.TextBox2_Falldown = New System.Windows.Forms.TextBox()
+        Me.TextBox2_WenD = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox2_foot_hp = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label2_foot = New System.Windows.Forms.Label()
         Me.TextBox2_arm_hp = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label2_arm = New System.Windows.Forms.Label()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label2_yao = New System.Windows.Forms.Label()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label2_back = New System.Windows.Forms.Label()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label2_Xiong = New System.Windows.Forms.Label()
         Me.TextBox2_body_hp = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label2_body = New System.Windows.Forms.Label()
         Me.TextBox2_Head_hp = New System.Windows.Forms.TextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label2_head = New System.Windows.Forms.Label()
         Me.TextBox2_WenDi = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.TextBox2_Int = New System.Windows.Forms.TextBox()
@@ -101,6 +101,10 @@ Partial Class Form1
         Me.Label23 = New System.Windows.Forms.Label()
         Me.TextBox2_Pow = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -126,6 +130,8 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.ProgressBar1_fRight)
         Me.GroupBox1.Controls.Add(Me.ProgressBar1_fLeft)
         Me.GroupBox1.Controls.Add(Me.ProgressBar1_aRight)
@@ -139,22 +145,22 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.TextBox1_Xiong_con)
         Me.GroupBox1.Controls.Add(Me.TextBox22)
         Me.GroupBox1.Controls.Add(Me.TextBox1_Head_con)
-        Me.GroupBox1.Controls.Add(Me.TextBox1_Falldown)
+        Me.GroupBox1.Controls.Add(Me.TextBox1_WenD)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.TextBox1_foot_hp)
-        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Controls.Add(Me.Label1_foot)
         Me.GroupBox1.Controls.Add(Me.TextBox1_arm_hp)
-        Me.GroupBox1.Controls.Add(Me.Label13)
+        Me.GroupBox1.Controls.Add(Me.Label1_arm)
         Me.GroupBox1.Controls.Add(Me.TextBox12)
-        Me.GroupBox1.Controls.Add(Me.Label14)
+        Me.GroupBox1.Controls.Add(Me.Label1_yao)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.Label1_back)
         Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label1_Xiong)
         Me.GroupBox1.Controls.Add(Me.TextBox1_body_hp)
-        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label1_body)
         Me.GroupBox1.Controls.Add(Me.TextBox1_Head_hp)
-        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.Label1_head)
         Me.GroupBox1.Controls.Add(Me.TextBox1_WenDi)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.TextBox1_Int)
@@ -218,7 +224,7 @@ Partial Class Form1
         Me.TextBox1_foot_con.Name = "TextBox1_foot_con"
         Me.TextBox1_foot_con.Size = New System.Drawing.Size(37, 21)
         Me.TextBox1_foot_con.TabIndex = 38
-        Me.TextBox1_foot_con.Text = "100"
+        Me.TextBox1_foot_con.Text = "18"
         '
         'TextBox1_arm_con
         '
@@ -226,7 +232,7 @@ Partial Class Form1
         Me.TextBox1_arm_con.Name = "TextBox1_arm_con"
         Me.TextBox1_arm_con.Size = New System.Drawing.Size(37, 21)
         Me.TextBox1_arm_con.TabIndex = 37
-        Me.TextBox1_arm_con.Text = "80"
+        Me.TextBox1_arm_con.Text = "15"
         '
         'TextBox1_yao_con
         '
@@ -242,7 +248,7 @@ Partial Class Form1
         Me.TextBox1_back_con.Name = "TextBox1_back_con"
         Me.TextBox1_back_con.Size = New System.Drawing.Size(37, 21)
         Me.TextBox1_back_con.TabIndex = 35
-        Me.TextBox1_back_con.Text = "15"
+        Me.TextBox1_back_con.Text = "7"
         '
         'TextBox1_Xiong_con
         '
@@ -250,7 +256,7 @@ Partial Class Form1
         Me.TextBox1_Xiong_con.Name = "TextBox1_Xiong_con"
         Me.TextBox1_Xiong_con.Size = New System.Drawing.Size(37, 21)
         Me.TextBox1_Xiong_con.TabIndex = 34
-        Me.TextBox1_Xiong_con.Text = "15"
+        Me.TextBox1_Xiong_con.Text = "10"
         '
         'TextBox22
         '
@@ -268,15 +274,14 @@ Partial Class Form1
         Me.TextBox1_Head_con.TabIndex = 32
         Me.TextBox1_Head_con.Text = "5"
         '
-        'TextBox1_Falldown
+        'TextBox1_WenD
         '
-        Me.TextBox1_Falldown.Location = New System.Drawing.Point(41, 130)
-        Me.TextBox1_Falldown.Name = "TextBox1_Falldown"
-        Me.TextBox1_Falldown.ReadOnly = True
-        Me.TextBox1_Falldown.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_Falldown.TabIndex = 29
-        Me.TextBox1_Falldown.TabStop = False
-        Me.TextBox1_Falldown.Text = "稳定"
+        Me.TextBox1_WenD.Location = New System.Drawing.Point(41, 130)
+        Me.TextBox1_WenD.Name = "TextBox1_WenD"
+        Me.TextBox1_WenD.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_WenD.TabIndex = 29
+        Me.TextBox1_WenD.TabStop = False
+        Me.TextBox1_WenD.Text = "100"
         '
         'Label1
         '
@@ -295,14 +300,14 @@ Partial Class Form1
         Me.TextBox1_foot_hp.TabIndex = 25
         Me.TextBox1_foot_hp.Text = "160"
         '
-        'Label12
+        'Label1_foot
         '
-        Me.Label12.Location = New System.Drawing.Point(89, 187)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(38, 18)
-        Me.Label12.TabIndex = 24
-        Me.Label12.Text = "脚"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label1_foot.Location = New System.Drawing.Point(89, 187)
+        Me.Label1_foot.Name = "Label1_foot"
+        Me.Label1_foot.Size = New System.Drawing.Size(38, 18)
+        Me.Label1_foot.TabIndex = 24
+        Me.Label1_foot.Text = "脚"
+        Me.Label1_foot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox1_arm_hp
         '
@@ -312,14 +317,14 @@ Partial Class Form1
         Me.TextBox1_arm_hp.TabIndex = 23
         Me.TextBox1_arm_hp.Text = "80"
         '
-        'Label13
+        'Label1_arm
         '
-        Me.Label13.Location = New System.Drawing.Point(89, 160)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(38, 18)
-        Me.Label13.TabIndex = 22
-        Me.Label13.Text = "手"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label1_arm.Location = New System.Drawing.Point(89, 160)
+        Me.Label1_arm.Name = "Label1_arm"
+        Me.Label1_arm.Size = New System.Drawing.Size(38, 18)
+        Me.Label1_arm.TabIndex = 22
+        Me.Label1_arm.Text = "手"
+        Me.Label1_arm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox12
         '
@@ -329,14 +334,14 @@ Partial Class Form1
         Me.TextBox12.Size = New System.Drawing.Size(37, 21)
         Me.TextBox12.TabIndex = 21
         '
-        'Label14
+        'Label1_yao
         '
-        Me.Label14.Location = New System.Drawing.Point(89, 133)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(38, 18)
-        Me.Label14.TabIndex = 20
-        Me.Label14.Text = "腰"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label1_yao.Location = New System.Drawing.Point(89, 133)
+        Me.Label1_yao.Name = "Label1_yao"
+        Me.Label1_yao.Size = New System.Drawing.Size(38, 18)
+        Me.Label1_yao.TabIndex = 20
+        Me.Label1_yao.Text = "小腹"
+        Me.Label1_yao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox1
         '
@@ -346,14 +351,14 @@ Partial Class Form1
         Me.TextBox1.Size = New System.Drawing.Size(37, 21)
         Me.TextBox1.TabIndex = 19
         '
-        'Label7
+        'Label1_back
         '
-        Me.Label7.Location = New System.Drawing.Point(89, 106)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(38, 18)
-        Me.Label7.TabIndex = 18
-        Me.Label7.Text = "后背"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label1_back.Location = New System.Drawing.Point(89, 106)
+        Me.Label1_back.Name = "Label1_back"
+        Me.Label1_back.Size = New System.Drawing.Size(38, 18)
+        Me.Label1_back.TabIndex = 18
+        Me.Label1_back.Text = "后背"
+        Me.Label1_back.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox6
         '
@@ -363,14 +368,14 @@ Partial Class Form1
         Me.TextBox6.Size = New System.Drawing.Size(37, 21)
         Me.TextBox6.TabIndex = 17
         '
-        'Label8
+        'Label1_Xiong
         '
-        Me.Label8.Location = New System.Drawing.Point(89, 79)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(38, 18)
-        Me.Label8.TabIndex = 16
-        Me.Label8.Text = "胸"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label1_Xiong.Location = New System.Drawing.Point(89, 79)
+        Me.Label1_Xiong.Name = "Label1_Xiong"
+        Me.Label1_Xiong.Size = New System.Drawing.Size(38, 18)
+        Me.Label1_Xiong.TabIndex = 16
+        Me.Label1_Xiong.Text = "胸"
+        Me.Label1_Xiong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox1_body_hp
         '
@@ -380,14 +385,14 @@ Partial Class Form1
         Me.TextBox1_body_hp.TabIndex = 15
         Me.TextBox1_body_hp.Text = "200"
         '
-        'Label9
+        'Label1_body
         '
-        Me.Label9.Location = New System.Drawing.Point(89, 52)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(38, 18)
-        Me.Label9.TabIndex = 14
-        Me.Label9.Text = "身体"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label1_body.Location = New System.Drawing.Point(89, 52)
+        Me.Label1_body.Name = "Label1_body"
+        Me.Label1_body.Size = New System.Drawing.Size(38, 18)
+        Me.Label1_body.TabIndex = 14
+        Me.Label1_body.Text = "身体"
+        Me.Label1_body.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox1_Head_hp
         '
@@ -395,16 +400,16 @@ Partial Class Form1
         Me.TextBox1_Head_hp.Name = "TextBox1_Head_hp"
         Me.TextBox1_Head_hp.Size = New System.Drawing.Size(37, 21)
         Me.TextBox1_Head_hp.TabIndex = 13
-        Me.TextBox1_Head_hp.Text = "20"
+        Me.TextBox1_Head_hp.Text = "30"
         '
-        'Label10
+        'Label1_head
         '
-        Me.Label10.Location = New System.Drawing.Point(89, 25)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(38, 18)
-        Me.Label10.TabIndex = 12
-        Me.Label10.Text = "头"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label1_head.Location = New System.Drawing.Point(89, 25)
+        Me.Label1_head.Name = "Label1_head"
+        Me.Label1_head.Size = New System.Drawing.Size(38, 18)
+        Me.Label1_head.TabIndex = 12
+        Me.Label1_head.Text = "头"
+        Me.Label1_head.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox1_WenDi
         '
@@ -485,6 +490,8 @@ Partial Class Form1
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.ComboBox2)
+        Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.ProgressBar2_fRight)
         Me.GroupBox2.Controls.Add(Me.ProgressBar2_fLeft)
         Me.GroupBox2.Controls.Add(Me.ProgressBar2_aRight)
@@ -498,22 +505,22 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.TextBox2_Xiong_con)
         Me.GroupBox2.Controls.Add(Me.TextBox8)
         Me.GroupBox2.Controls.Add(Me.TextBox2_Head_con)
-        Me.GroupBox2.Controls.Add(Me.TextBox2_Falldown)
+        Me.GroupBox2.Controls.Add(Me.TextBox2_WenD)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.TextBox2_foot_hp)
-        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.Label2_foot)
         Me.GroupBox2.Controls.Add(Me.TextBox2_arm_hp)
-        Me.GroupBox2.Controls.Add(Me.Label15)
+        Me.GroupBox2.Controls.Add(Me.Label2_arm)
         Me.GroupBox2.Controls.Add(Me.TextBox14)
-        Me.GroupBox2.Controls.Add(Me.Label16)
+        Me.GroupBox2.Controls.Add(Me.Label2_yao)
         Me.GroupBox2.Controls.Add(Me.TextBox15)
-        Me.GroupBox2.Controls.Add(Me.Label17)
+        Me.GroupBox2.Controls.Add(Me.Label2_back)
         Me.GroupBox2.Controls.Add(Me.TextBox16)
-        Me.GroupBox2.Controls.Add(Me.Label18)
+        Me.GroupBox2.Controls.Add(Me.Label2_Xiong)
         Me.GroupBox2.Controls.Add(Me.TextBox2_body_hp)
-        Me.GroupBox2.Controls.Add(Me.Label19)
+        Me.GroupBox2.Controls.Add(Me.Label2_body)
         Me.GroupBox2.Controls.Add(Me.TextBox2_Head_hp)
-        Me.GroupBox2.Controls.Add(Me.Label20)
+        Me.GroupBox2.Controls.Add(Me.Label2_head)
         Me.GroupBox2.Controls.Add(Me.TextBox2_WenDi)
         Me.GroupBox2.Controls.Add(Me.Label21)
         Me.GroupBox2.Controls.Add(Me.TextBox2_Int)
@@ -577,7 +584,7 @@ Partial Class Form1
         Me.TextBox2_foot_con.Name = "TextBox2_foot_con"
         Me.TextBox2_foot_con.Size = New System.Drawing.Size(37, 21)
         Me.TextBox2_foot_con.TabIndex = 38
-        Me.TextBox2_foot_con.Text = "100"
+        Me.TextBox2_foot_con.Text = "18"
         '
         'TextBox2_arm_con
         '
@@ -585,7 +592,7 @@ Partial Class Form1
         Me.TextBox2_arm_con.Name = "TextBox2_arm_con"
         Me.TextBox2_arm_con.Size = New System.Drawing.Size(37, 21)
         Me.TextBox2_arm_con.TabIndex = 37
-        Me.TextBox2_arm_con.Text = "80"
+        Me.TextBox2_arm_con.Text = "15"
         '
         'TextBox2_yao_con
         '
@@ -601,7 +608,7 @@ Partial Class Form1
         Me.TextBox2_back_con.Name = "TextBox2_back_con"
         Me.TextBox2_back_con.Size = New System.Drawing.Size(37, 21)
         Me.TextBox2_back_con.TabIndex = 35
-        Me.TextBox2_back_con.Text = "15"
+        Me.TextBox2_back_con.Text = "7"
         '
         'TextBox2_Xiong_con
         '
@@ -609,7 +616,7 @@ Partial Class Form1
         Me.TextBox2_Xiong_con.Name = "TextBox2_Xiong_con"
         Me.TextBox2_Xiong_con.Size = New System.Drawing.Size(37, 21)
         Me.TextBox2_Xiong_con.TabIndex = 34
-        Me.TextBox2_Xiong_con.Text = "15"
+        Me.TextBox2_Xiong_con.Text = "10"
         '
         'TextBox8
         '
@@ -627,15 +634,14 @@ Partial Class Form1
         Me.TextBox2_Head_con.TabIndex = 32
         Me.TextBox2_Head_con.Text = "5"
         '
-        'TextBox2_Falldown
+        'TextBox2_WenD
         '
-        Me.TextBox2_Falldown.Location = New System.Drawing.Point(41, 130)
-        Me.TextBox2_Falldown.Name = "TextBox2_Falldown"
-        Me.TextBox2_Falldown.ReadOnly = True
-        Me.TextBox2_Falldown.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox2_Falldown.TabIndex = 29
-        Me.TextBox2_Falldown.TabStop = False
-        Me.TextBox2_Falldown.Text = "稳定"
+        Me.TextBox2_WenD.Location = New System.Drawing.Point(41, 130)
+        Me.TextBox2_WenD.Name = "TextBox2_WenD"
+        Me.TextBox2_WenD.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox2_WenD.TabIndex = 29
+        Me.TextBox2_WenD.TabStop = False
+        Me.TextBox2_WenD.Text = "75"
         '
         'Label6
         '
@@ -654,14 +660,14 @@ Partial Class Form1
         Me.TextBox2_foot_hp.TabIndex = 25
         Me.TextBox2_foot_hp.Text = "160"
         '
-        'Label11
+        'Label2_foot
         '
-        Me.Label11.Location = New System.Drawing.Point(89, 187)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(38, 18)
-        Me.Label11.TabIndex = 24
-        Me.Label11.Text = "脚"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label2_foot.Location = New System.Drawing.Point(89, 187)
+        Me.Label2_foot.Name = "Label2_foot"
+        Me.Label2_foot.Size = New System.Drawing.Size(38, 18)
+        Me.Label2_foot.TabIndex = 24
+        Me.Label2_foot.Text = "脚"
+        Me.Label2_foot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox2_arm_hp
         '
@@ -671,14 +677,14 @@ Partial Class Form1
         Me.TextBox2_arm_hp.TabIndex = 23
         Me.TextBox2_arm_hp.Text = "80"
         '
-        'Label15
+        'Label2_arm
         '
-        Me.Label15.Location = New System.Drawing.Point(89, 160)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(38, 18)
-        Me.Label15.TabIndex = 22
-        Me.Label15.Text = "手"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label2_arm.Location = New System.Drawing.Point(89, 160)
+        Me.Label2_arm.Name = "Label2_arm"
+        Me.Label2_arm.Size = New System.Drawing.Size(38, 18)
+        Me.Label2_arm.TabIndex = 22
+        Me.Label2_arm.Text = "手"
+        Me.Label2_arm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox14
         '
@@ -688,14 +694,14 @@ Partial Class Form1
         Me.TextBox14.Size = New System.Drawing.Size(37, 21)
         Me.TextBox14.TabIndex = 21
         '
-        'Label16
+        'Label2_yao
         '
-        Me.Label16.Location = New System.Drawing.Point(89, 133)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(38, 18)
-        Me.Label16.TabIndex = 20
-        Me.Label16.Text = "腰"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label2_yao.Location = New System.Drawing.Point(89, 133)
+        Me.Label2_yao.Name = "Label2_yao"
+        Me.Label2_yao.Size = New System.Drawing.Size(38, 18)
+        Me.Label2_yao.TabIndex = 20
+        Me.Label2_yao.Text = "小腹"
+        Me.Label2_yao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox15
         '
@@ -705,14 +711,14 @@ Partial Class Form1
         Me.TextBox15.Size = New System.Drawing.Size(37, 21)
         Me.TextBox15.TabIndex = 19
         '
-        'Label17
+        'Label2_back
         '
-        Me.Label17.Location = New System.Drawing.Point(89, 106)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(38, 18)
-        Me.Label17.TabIndex = 18
-        Me.Label17.Text = "后背"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label2_back.Location = New System.Drawing.Point(89, 106)
+        Me.Label2_back.Name = "Label2_back"
+        Me.Label2_back.Size = New System.Drawing.Size(38, 18)
+        Me.Label2_back.TabIndex = 18
+        Me.Label2_back.Text = "后背"
+        Me.Label2_back.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox16
         '
@@ -722,14 +728,14 @@ Partial Class Form1
         Me.TextBox16.Size = New System.Drawing.Size(37, 21)
         Me.TextBox16.TabIndex = 17
         '
-        'Label18
+        'Label2_Xiong
         '
-        Me.Label18.Location = New System.Drawing.Point(89, 79)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(38, 18)
-        Me.Label18.TabIndex = 16
-        Me.Label18.Text = "胸"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label2_Xiong.Location = New System.Drawing.Point(89, 79)
+        Me.Label2_Xiong.Name = "Label2_Xiong"
+        Me.Label2_Xiong.Size = New System.Drawing.Size(38, 18)
+        Me.Label2_Xiong.TabIndex = 16
+        Me.Label2_Xiong.Text = "胸"
+        Me.Label2_Xiong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox2_body_hp
         '
@@ -739,14 +745,14 @@ Partial Class Form1
         Me.TextBox2_body_hp.TabIndex = 15
         Me.TextBox2_body_hp.Text = "200"
         '
-        'Label19
+        'Label2_body
         '
-        Me.Label19.Location = New System.Drawing.Point(89, 52)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(38, 18)
-        Me.Label19.TabIndex = 14
-        Me.Label19.Text = "身体"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label2_body.Location = New System.Drawing.Point(89, 52)
+        Me.Label2_body.Name = "Label2_body"
+        Me.Label2_body.Size = New System.Drawing.Size(38, 18)
+        Me.Label2_body.TabIndex = 14
+        Me.Label2_body.Text = "身体"
+        Me.Label2_body.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox2_Head_hp
         '
@@ -754,16 +760,16 @@ Partial Class Form1
         Me.TextBox2_Head_hp.Name = "TextBox2_Head_hp"
         Me.TextBox2_Head_hp.Size = New System.Drawing.Size(37, 21)
         Me.TextBox2_Head_hp.TabIndex = 13
-        Me.TextBox2_Head_hp.Text = "20"
+        Me.TextBox2_Head_hp.Text = "30"
         '
-        'Label20
+        'Label2_head
         '
-        Me.Label20.Location = New System.Drawing.Point(89, 25)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(38, 18)
-        Me.Label20.TabIndex = 12
-        Me.Label20.Text = "头"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label2_head.Location = New System.Drawing.Point(89, 25)
+        Me.Label2_head.Name = "Label2_head"
+        Me.Label2_head.Size = New System.Drawing.Size(38, 18)
+        Me.Label2_head.TabIndex = 12
+        Me.Label2_head.Text = "头"
+        Me.Label2_head.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TextBox2_WenDi
         '
@@ -833,6 +839,44 @@ Partial Class Form1
         Me.Label24.Text = "力量"
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label7
+        '
+        Me.Label7.Location = New System.Drawing.Point(11, 160)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(38, 18)
+        Me.Label7.TabIndex = 45
+        Me.Label7.Text = "功夫"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"太极", "泰拳"})
+        Me.ComboBox1.Location = New System.Drawing.Point(13, 185)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(65, 20)
+        Me.ComboBox1.TabIndex = 46
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"太极", "泰拳"})
+        Me.ComboBox2.Location = New System.Drawing.Point(13, 184)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(65, 20)
+        Me.ComboBox2.TabIndex = 48
+        '
+        'Label8
+        '
+        Me.Label8.Location = New System.Drawing.Point(11, 159)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(38, 18)
+        Me.Label8.TabIndex = 47
+        Me.Label8.Text = "功夫"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -866,20 +910,20 @@ Partial Class Form1
     Friend WithEvents TextBox1_Pow As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1_foot_hp As TextBox
-    Friend WithEvents Label12 As Label
+    Friend WithEvents Label1_foot As Label
     Friend WithEvents TextBox1_arm_hp As TextBox
-    Friend WithEvents Label13 As Label
+    Friend WithEvents Label1_arm As Label
     Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents Label14 As Label
+    Friend WithEvents Label1_yao As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label7 As Label
+    Friend WithEvents Label1_back As Label
     Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label8 As Label
+    Friend WithEvents Label1_Xiong As Label
     Friend WithEvents TextBox1_body_hp As TextBox
-    Friend WithEvents Label9 As Label
+    Friend WithEvents Label1_body As Label
     Friend WithEvents TextBox1_Head_hp As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox1_Falldown As TextBox
+    Friend WithEvents Label1_head As Label
+    Friend WithEvents TextBox1_WenD As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ProgressBar1_Head As ProgressBar
     Friend WithEvents TextBox1_foot_con As TextBox
@@ -908,22 +952,22 @@ Partial Class Form1
     Friend WithEvents TextBox2_Xiong_con As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox2_Head_con As TextBox
-    Friend WithEvents TextBox2_Falldown As TextBox
+    Friend WithEvents TextBox2_WenD As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox2_foot_hp As TextBox
-    Friend WithEvents Label11 As Label
+    Friend WithEvents Label2_foot As Label
     Friend WithEvents TextBox2_arm_hp As TextBox
-    Friend WithEvents Label15 As Label
+    Friend WithEvents Label2_arm As Label
     Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Label16 As Label
+    Friend WithEvents Label2_yao As Label
     Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents Label17 As Label
+    Friend WithEvents Label2_back As Label
     Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents Label18 As Label
+    Friend WithEvents Label2_Xiong As Label
     Friend WithEvents TextBox2_body_hp As TextBox
-    Friend WithEvents Label19 As Label
+    Friend WithEvents Label2_body As Label
     Friend WithEvents TextBox2_Head_hp As TextBox
-    Friend WithEvents Label20 As Label
+    Friend WithEvents Label2_head As Label
     Friend WithEvents TextBox2_WenDi As TextBox
     Friend WithEvents Label21 As Label
     Friend WithEvents TextBox2_Int As TextBox
@@ -932,4 +976,8 @@ Partial Class Form1
     Friend WithEvents Label23 As Label
     Friend WithEvents TextBox2_Pow As TextBox
     Friend WithEvents Label24 As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label8 As Label
 End Class
