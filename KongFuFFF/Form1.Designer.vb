@@ -25,6 +25,8 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.ProgressBar1_fRight = New System.Windows.Forms.ProgressBar()
         Me.ProgressBar1_fLeft = New System.Windows.Forms.ProgressBar()
         Me.ProgressBar1_aRight = New System.Windows.Forms.ProgressBar()
@@ -38,7 +40,7 @@ Partial Class Form1
         Me.TextBox1_Xiong_con = New System.Windows.Forms.TextBox()
         Me.TextBox22 = New System.Windows.Forms.TextBox()
         Me.TextBox1_Head_con = New System.Windows.Forms.TextBox()
-        Me.TextBox1_WenD = New System.Windows.Forms.TextBox()
+        Me.TextBox1_ZhuangTai = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1_foot_hp = New System.Windows.Forms.TextBox()
         Me.Label1_foot = New System.Windows.Forms.Label()
@@ -64,6 +66,8 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.ProgressBar2_fRight = New System.Windows.Forms.ProgressBar()
         Me.ProgressBar2_fLeft = New System.Windows.Forms.ProgressBar()
         Me.ProgressBar2_aRight = New System.Windows.Forms.ProgressBar()
@@ -77,7 +81,7 @@ Partial Class Form1
         Me.TextBox2_Xiong_con = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox2_Head_con = New System.Windows.Forms.TextBox()
-        Me.TextBox2_WenD = New System.Windows.Forms.TextBox()
+        Me.TextBox2_ZhuangTai = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox2_foot_hp = New System.Windows.Forms.TextBox()
         Me.Label2_foot = New System.Windows.Forms.Label()
@@ -101,10 +105,6 @@ Partial Class Form1
         Me.Label23 = New System.Windows.Forms.Label()
         Me.TextBox2_Pow = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -145,7 +145,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.TextBox1_Xiong_con)
         Me.GroupBox1.Controls.Add(Me.TextBox22)
         Me.GroupBox1.Controls.Add(Me.TextBox1_Head_con)
-        Me.GroupBox1.Controls.Add(Me.TextBox1_WenD)
+        Me.GroupBox1.Controls.Add(Me.TextBox1_ZhuangTai)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.TextBox1_foot_hp)
         Me.GroupBox1.Controls.Add(Me.Label1_foot)
@@ -175,6 +175,25 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "per1"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"太极", "泰拳"})
+        Me.ComboBox1.Location = New System.Drawing.Point(13, 185)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(65, 20)
+        Me.ComboBox1.TabIndex = 46
+        '
+        'Label7
+        '
+        Me.Label7.Location = New System.Drawing.Point(11, 160)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(38, 18)
+        Me.Label7.TabIndex = 45
+        Me.Label7.Text = "功夫"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'ProgressBar1_fRight
         '
@@ -274,14 +293,14 @@ Partial Class Form1
         Me.TextBox1_Head_con.TabIndex = 32
         Me.TextBox1_Head_con.Text = "5"
         '
-        'TextBox1_WenD
+        'TextBox1_ZhuangTai
         '
-        Me.TextBox1_WenD.Location = New System.Drawing.Point(41, 130)
-        Me.TextBox1_WenD.Name = "TextBox1_WenD"
-        Me.TextBox1_WenD.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox1_WenD.TabIndex = 29
-        Me.TextBox1_WenD.TabStop = False
-        Me.TextBox1_WenD.Text = "100"
+        Me.TextBox1_ZhuangTai.Location = New System.Drawing.Point(41, 130)
+        Me.TextBox1_ZhuangTai.Name = "TextBox1_ZhuangTai"
+        Me.TextBox1_ZhuangTai.ReadOnly = True
+        Me.TextBox1_ZhuangTai.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox1_ZhuangTai.TabIndex = 29
+        Me.TextBox1_ZhuangTai.TabStop = False
         '
         'Label1
         '
@@ -417,7 +436,7 @@ Partial Class Form1
         Me.TextBox1_WenDi.Name = "TextBox1_WenDi"
         Me.TextBox1_WenDi.Size = New System.Drawing.Size(37, 21)
         Me.TextBox1_WenDi.TabIndex = 9
-        Me.TextBox1_WenDi.Text = "20"
+        Me.TextBox1_WenDi.Text = "100"
         '
         'Label5
         '
@@ -505,7 +524,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.TextBox2_Xiong_con)
         Me.GroupBox2.Controls.Add(Me.TextBox8)
         Me.GroupBox2.Controls.Add(Me.TextBox2_Head_con)
-        Me.GroupBox2.Controls.Add(Me.TextBox2_WenD)
+        Me.GroupBox2.Controls.Add(Me.TextBox2_ZhuangTai)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.TextBox2_foot_hp)
         Me.GroupBox2.Controls.Add(Me.Label2_foot)
@@ -535,6 +554,25 @@ Partial Class Form1
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "per2"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"太极", "泰拳"})
+        Me.ComboBox2.Location = New System.Drawing.Point(13, 184)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(65, 20)
+        Me.ComboBox2.TabIndex = 48
+        '
+        'Label8
+        '
+        Me.Label8.Location = New System.Drawing.Point(11, 159)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(38, 18)
+        Me.Label8.TabIndex = 47
+        Me.Label8.Text = "功夫"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'ProgressBar2_fRight
         '
@@ -634,14 +672,14 @@ Partial Class Form1
         Me.TextBox2_Head_con.TabIndex = 32
         Me.TextBox2_Head_con.Text = "5"
         '
-        'TextBox2_WenD
+        'TextBox2_ZhuangTai
         '
-        Me.TextBox2_WenD.Location = New System.Drawing.Point(41, 130)
-        Me.TextBox2_WenD.Name = "TextBox2_WenD"
-        Me.TextBox2_WenD.Size = New System.Drawing.Size(37, 21)
-        Me.TextBox2_WenD.TabIndex = 29
-        Me.TextBox2_WenD.TabStop = False
-        Me.TextBox2_WenD.Text = "75"
+        Me.TextBox2_ZhuangTai.Location = New System.Drawing.Point(41, 130)
+        Me.TextBox2_ZhuangTai.Name = "TextBox2_ZhuangTai"
+        Me.TextBox2_ZhuangTai.ReadOnly = True
+        Me.TextBox2_ZhuangTai.Size = New System.Drawing.Size(37, 21)
+        Me.TextBox2_ZhuangTai.TabIndex = 29
+        Me.TextBox2_ZhuangTai.TabStop = False
         '
         'Label6
         '
@@ -777,7 +815,7 @@ Partial Class Form1
         Me.TextBox2_WenDi.Name = "TextBox2_WenDi"
         Me.TextBox2_WenDi.Size = New System.Drawing.Size(37, 21)
         Me.TextBox2_WenDi.TabIndex = 9
-        Me.TextBox2_WenDi.Text = "10"
+        Me.TextBox2_WenDi.Text = "75"
         '
         'Label21
         '
@@ -839,44 +877,6 @@ Partial Class Form1
         Me.Label24.Text = "力量"
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label7
-        '
-        Me.Label7.Location = New System.Drawing.Point(11, 160)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(38, 18)
-        Me.Label7.TabIndex = 45
-        Me.Label7.Text = "功夫"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"太极", "泰拳"})
-        Me.ComboBox1.Location = New System.Drawing.Point(13, 185)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(65, 20)
-        Me.ComboBox1.TabIndex = 46
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"太极", "泰拳"})
-        Me.ComboBox2.Location = New System.Drawing.Point(13, 184)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(65, 20)
-        Me.ComboBox2.TabIndex = 48
-        '
-        'Label8
-        '
-        Me.Label8.Location = New System.Drawing.Point(11, 159)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(38, 18)
-        Me.Label8.TabIndex = 47
-        Me.Label8.Text = "功夫"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -923,7 +923,7 @@ Partial Class Form1
     Friend WithEvents Label1_body As Label
     Friend WithEvents TextBox1_Head_hp As TextBox
     Friend WithEvents Label1_head As Label
-    Friend WithEvents TextBox1_WenD As TextBox
+    Friend WithEvents TextBox1_ZhuangTai As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ProgressBar1_Head As ProgressBar
     Friend WithEvents TextBox1_foot_con As TextBox
@@ -952,7 +952,7 @@ Partial Class Form1
     Friend WithEvents TextBox2_Xiong_con As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox2_Head_con As TextBox
-    Friend WithEvents TextBox2_WenD As TextBox
+    Friend WithEvents TextBox2_ZhuangTai As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox2_foot_hp As TextBox
     Friend WithEvents Label2_foot As Label

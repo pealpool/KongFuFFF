@@ -8,17 +8,45 @@
     Public LianJi As String = 0 '连击
     Public siHeng As Integer = 0 '失衡=1,倒地=2
     Public wz As Integer = 0 'wz 位置状态，0：面对面，1：per1优势，2：per2优势
-    Public WenD1, WenD2 As Integer '每次闪避减少稳定度
+    Public WenD1, WenD2 As Integer '稳定度
     Public Dwidth1, Dwidth2 As Double 'ProgressBar单位/hp
+    Public HuiHe As Integer = 1 '1=per1回合，2=per2回合
+    Public HUiHeShu As Integer '回合数
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.ComboBox1.SelectedIndex() = 0
         Me.ComboBox2.SelectedIndex() = 1
     End Sub
 
-    Public HuiHe As Integer = 1 '1=per1回合，2=per2回合
+
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        GOset()
+    End Sub
+
+    Private Function MinZhong(ByVal per_Att As Person, ByVal per_Con As Person)
+        Dim WenDLv As Double
+        If per_Con.WenDi >= 100 Then
+            WenDLv = 1
+        ElseIf per_Con.WenDi >= 75 And per_Con.WenDi < 100 Then
+            WenDLv = 1.4 - 0.004 * per_Con.WenDi
+        ElseIf per_Con.WenDi >= 52 And per_Con.WenDi < 75 Then
+            WenDLv = 2.08 - 0.01 * per_Con.WenDi
+        ElseIf per_Con.WenDi >= 37 And per_Con.WenDi > 52 Then
+            WenDLv = 3.48 - 0.04 * per_Con.WenDi
+        ElseIf per_Con.WenDi >= 26 And per_Con.WenDi < 37 Then
+            WenDLv = 5.03 - 0.08 * per_Con.WenDi
+        ElseIf per_Con.WenDi < 26 Then
+            WenDLv = 7.67 - 0.18 * per_Con.WenDi
+        End If
+        MinZhong = ((1.2 - 1.2 / (2.5 * per_Att.Dev + 1)) - (1 - 1 / (0.2 * per_Con.Dev + 1))) * WenDLv
+        'MinZhong = (1.2 - 1.2 / (0.25 * per_Att.Dev + 1)) - (1 - 1 / (0.02 * per_Con.Dev + 1))
+    End Function
+
+    Private Sub GOset()
+        Me.RichTextBox1.Clear()
+        HuiHe = 1 '1=per1回合，2=per2回合
+        HUiHeShu = 1
         With per1
             .Name = "per1"
             .Pow = TextBox1_Pow.Text
@@ -46,7 +74,7 @@
             .footRight_hp = TextBox1_foot_hp.Text
             .footRight_hp_G = TextBox1_foot_hp.Text
             .footRight_Con = TextBox1_foot_con.Text
-            .WenDiGU = TextBox1_WenD.Text
+            .WenDiGU = TextBox1_WenDi.Text
             .WenDi = .WenDiGU
         End With
         With per2
@@ -76,7 +104,7 @@
             .footRight_hp = TextBox2_foot_hp.Text
             .footRight_hp_G = TextBox2_foot_hp.Text
             .footRight_Con = TextBox2_foot_con.Text
-            .WenDiGU = TextBox2_WenD.Text
+            .WenDiGU = TextBox2_WenDi.Text
             .WenDi = .WenDiGU
         End With
 
@@ -107,25 +135,27 @@
             .ProgressBar2_fRight.Width = per2.footRight_hp * Dwidth2
             .ProgressBar2_fRight.Value = 100
         End With
-
-
     End Sub
-
-    Private Function MinZhong(ByVal per_Att As Person, ByVal per_Con As Person)
-        MinZhong = (1.2 - 1.2 / (0.25 * per_Att.Dev + 1)) - (1 - 1 / (0.02 * per_Con.Dev + 1))
-    End Function
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If HuiHe = 1 Then
-            ZhaoSiGO(per1, per2, per1zc, siHeng)
-            HuiHe = 2
-        Else
-            HuiHe = 1
-            ZhaoSiGO(per2, per1, per2zc, siHeng)
-        End If
-        RichTextBox1.ScrollToCaret() '滚动到光标处
-        ReflashProgressBar()
+        GOset()
+        Do While HuiHe <> 0
+            RichTextBox1.SelectionColor = Color.DeepPink
+            RichTextBox1.AppendText("第" + HUiHeShu.ToString + "回合" + Environment.NewLine)
+            RichTextBox1.SelectionColor = Color.Green
+            Select Case HuiHe
+                Case 1
+                    ZhaoSiGO(per1, per2, per1zc, siHeng)
+                    HuiHe = 2
+                Case 2
+                    ZhaoSiGO(per2, per1, per2zc, siHeng)
+                    HuiHe = 1
+            End Select
+            RichTextBox1.ScrollToCaret() '滚动到光标处
+            ReflashProgressBar()
+            HUiHeShu = HUiHeShu + 1
+        Loop
     End Sub
 
     Private Sub ZhaoSiGO(ByVal perAtt As Person, ByVal perCon As Person, ByVal perzc As KongFuChose, ByVal siHeng As Integer)
@@ -134,7 +164,8 @@
         perzcX = perzc.zsChose(perAtt.KF, 1, LianJi， 0)
         BuWei = perzc.AttBuWei(perAtt.KF, wz, perzcX, siHeng)
         With RichTextBox1
-            .AppendText(perAtt.Name + " 使出了 ")
+            .SelectionColor = Color.Black
+            .AppendText(perAtt.Name + " 使出了")
             .SelectionColor = Color.Green
             .AppendText(perzcX)
             .SelectionColor = Color.Black
@@ -145,6 +176,7 @@
         If MinZhong(perAtt, perCon) >= (Val(Rndz(0, 101)) * 0.01) Then
             watt = perzc.watt(perzcX)
             natt = perzc.natt(perzcX)
+            perCon.WenDi = perCon.WenDi - perzc.attWD(perzcX)
             Select Case BuWei
                 Case “头部”
                     sunatt = perCon.head_Hart(watt, natt, siHeng)
@@ -251,6 +283,17 @@
         Else
             ProgressBar2_fRight.Value = 0
         End If
+
+        If ProgressBar1_Head.Value = 0 Or ProgressBar1_body.Value = 0 Then
+            Me.RichTextBox1.SelectionColor = Color.Red
+            Me.RichTextBox1.AppendText(per1.Name + " 已被打倒。" + Environment.NewLine)
+            HuiHe = 0
+        ElseIf ProgressBar2_Head.Value = 0 Or ProgressBar2_body.Value = 0 Then
+            Me.RichTextBox1.SelectionColor = Color.Red
+            Me.RichTextBox1.AppendText(per2.Name + " 已被打倒。" + Environment.NewLine)
+            HuiHe = 0
+        End If
+
     End Sub
 
 
